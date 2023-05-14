@@ -22,8 +22,9 @@
 
 ### Criar branch e mudar de branch 
     - Comandos 
-        git branch nome-da-branch  | cria uma branch 
-        git checkout nome-da-branch | muda de branch 
-        git branch -a | lista todas as branches
-        git checkout -b nome-da-branch  | cria uma branch e troca para branch copiada 
+        git branch nome-da-branch   |  cria uma branch 
+        git checkout nome-da-branch |  muda de branch 
+        git branch -a  |  lista todas as branches
+        git checkout -b nome-da-branch  |  cria uma branch e troca para branch copiada 
         git branch -d nome-da-branch | apaga uma branch 
+        git pull | atualiza repositório local
