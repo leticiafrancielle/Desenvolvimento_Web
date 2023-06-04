@@ -1,4 +1,8 @@
-# GIT - Configurações 
+# GIT - Configurações
+
+### Inicializar repositório
+    -Comandos 
+        git init 
 
 
 ### Configurar usuário 
@@ -18,6 +22,7 @@
         git commit -m "message"   |   adiciona mensagem
         git commit -am "message"  |   adiciona os arquivos e adiciona mensagem
         git push   |   sobe arquivos no repositório
+        git pull | atualiza repositório local
 
 
 ### Criar branch e mudar de branch 
@@ -27,4 +32,3 @@
         git branch -a  |  lista todas as branches
         git checkout -b nome-da-branch  |  cria uma branch e troca para branch copiada 
         git branch -d nome-da-branch | apaga uma branch 
-        git pull | atualiza repositório local
