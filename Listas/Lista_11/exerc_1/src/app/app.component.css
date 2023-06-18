@@ -1,0 +1,22 @@
+.produto {
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 300px;
+  flex-wrap: wrap;
+}
+
+.produto {
+  margin: 5px;
+  color: red;
+}
+
+.produtos:hover {
+  max-width: 310px;
+}
+
+.produtos:hover {
+  color: bisque;
+}
