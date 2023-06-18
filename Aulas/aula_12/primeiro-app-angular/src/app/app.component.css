@@ -7,16 +7,16 @@
     max-width: 300px;
     flex-wrap: wrap;
   }
-  
+
   .pessoas p {
     margin: 5px;
     color: red;
   }
-  
+
   .pessoas:hover {
     max-width: 310px;
   }
-  
+
   .pessoas p:hover {
     color: bisque;
   }
