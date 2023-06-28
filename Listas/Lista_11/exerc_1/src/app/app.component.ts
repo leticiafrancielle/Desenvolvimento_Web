@@ -8,15 +8,21 @@ import Produto from './models/produto';
 })
 export class AppComponent {
 
+  public comprar(){
+    alert('Ir para a página de compras');
+  }
+
+  public mensagem: string = "Aquarius_Coffee"
+
   public produtos: Produto[] = new Array<Produto>();
 
   constructor() {
     this.produtos.push(new Produto("bolo de murangu","hummm, bolinho",
-                                  "https://img.elo7.com.br/product/original/30B68A0/bolo-de-morango-bolo-suspiro-de-morango.jpg",
+                                  "https://is3-ssl.mzstatic.com/image/thumb/Purple122/v4/b1/ac/b5/b1acb5e4-9845-0e4b-e9ed-22a53aa5eec3/source/256x256bb.jpg",
                                   100));
 
-    this.produtos.push(new Produto("bolo de fubá","bolinho de milho",
-                                  "https://www.sabornamesa.com.br/media/k2/items/cache/1b6069f7031f5df88e14909413a02435_XL.jpg",
+    this.produtos.push(new Produto("Café","Café torrado",
+                                  "https://pbs.twimg.com/profile_images/637011771497291776/HBwfD5ot_400x400.jpg",
                                   50));
 
     this.produtos.push(new Produto("suco de laranja", "puro suco da laranja",

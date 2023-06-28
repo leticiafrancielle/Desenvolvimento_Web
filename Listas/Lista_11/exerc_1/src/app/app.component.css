@@ -1,22 +1,69 @@
-.produto {
-  border: 1px solid black;
-  margin: 5px;
+#menu {
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 300px;
-  flex-wrap: wrap;
 }
 
-.produto {
-  margin: 5px;
-  color: red;
+.item-menu {
+  font-size: 40px;
+  margin-left: 30px;
+  margin-right: 200px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(0, 3, 190);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.item-menu:hover {
+  color: rgb(255, 0, 0);
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  color: rgb(98, 0, 255);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+}
+
+.produtos {
+  display: flex;
+  margin-top: 50px;
+  border: 2px solid rgb(167, 5, 5);
+  border-style: dashed;
+  margin: 111px;
+  justify-content: center;
+  align-items: center;
+  max-width: 330px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.produtos p {
+  color: black;
 }
 
 .produtos:hover {
   max-width: 310px;
+  color: red
 }
 
-.produtos:hover {
-  color: bisque;
+.produtos p:hover{
+  color: chartreuse;
+}
+
+.produtos img {
+  max-width:500px;
+  height: auto;
+}
+
+.produtos button{
+  border-radius: 10px;
+  cursor: pointer;
+  border-color: blue;
+  padding: auto;
+  background-color: aquamarine;
+}
+
+.produtos button:hover {
+  background-color: darkorange;
 }
