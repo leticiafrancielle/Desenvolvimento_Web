@@ -5,13 +5,13 @@
   <a class="item-menu" href="#">PRODUTOS</a>
   <a class="item-menu" href="#">CONTATO</a>
   <a class="item-menu" href="#">SOBRE NÓS</a>
-  <a class="item-menu" href="#">lOGIN</a>
+  <a class="item-menu" href="#">LOGIN</a>
 </div>
 
-<h1 class="titulo">{{ mensagem }}</h1>
+<h1 class="titulo">{{ mesage }}</h1>
 
-<div>
-  <div class="produtos" *ngFor="let produto of produtos">
+  <div *ngFor="let produto of produtos">
+    <div class="produtos">
     <img [src]="produto.imagem" />
 
     <p>{{ produto.nome }}</p>
@@ -19,7 +19,7 @@
     <p>{{ produto.valor }}</p>
 
     <button (click)="detalhes()">Detalhes</button>
-    <button (click)="comprar()">comprar</button>
+    <button (click)="comprar()">Comprar</button>
   </div>
 </div>
 </body>
