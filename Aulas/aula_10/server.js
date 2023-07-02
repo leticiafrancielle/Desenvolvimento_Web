@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 const mongoose = require('mongoose')
 const app = express()
 const port = 5700
@@ -6,11 +7,12 @@ const connectionString = "mongodb+srv://leticiafrancielle:teste123@appdatabase.s
 const Animal = require('./models/animal')
 
 app.use(express.json())
+app.use(cors())
 
 app.get("/listar-animais", async (req, res) => {
     try {
         let animais = await Animal.find()
-        return res.status(200).json({ animais: animais })
+        return res.status(200).json(animais)
     } catch (error) {
         return res.status(500).json(error)
     }
