@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
 
 const animalSchema = mongoose.Schema({
-    nome: { type: String, require: true },
-    raca: { type: String, require: true },
-    peso: { type: Number, require: true }
+    nome: { type: String, required: true },
+    raca: { type: String, required: true },
+    peso: { type: Number, required: true }
 })
 
-const Animal = mongoose.model('animais', animalSchema)
+const animal = mongoose.model('animais', animalSchema)
 
-module.exports = Animal
+module.exports = animal

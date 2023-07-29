@@ -4,21 +4,23 @@ const app = express()
 const port = 5700
 const connectionString = "mongodb+srv://leticiafrancielle:teste123@appdatabase.sjsbjbi.mongodb.net/"
 const Animal = require('./models/animal')
+const cors = require('cors')
 
 app.use(express.json())
+app.use(cors())
 
 app.get("/listar-animais", async (req, res) => {
     try {
         let animais = await Animal.find()
-        return res.status(200).json({ animais: animais })
+        return res.status(200).json(animais)
     } catch (error) {
         return res.status(500).json(error)
     }
 })
 
 app.post('/adicionar-animal', async (req, res) => {
-    try {
-        const { nome, raca, peso } = req.body
+   
+    let { nome, raca, peso } = req.body
 
         let animal = {
             nome,
@@ -26,6 +28,7 @@ app.post('/adicionar-animal', async (req, res) => {
             peso
         }
 
+    try {
         await Animal.create(animal)
         return res.status(201).json({ message: "Animal cadastrado com sucesso!" })
     } catch (error) {
