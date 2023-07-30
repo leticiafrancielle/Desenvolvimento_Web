@@ -1,7 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
-const port = 7700
+const port = 8700
 const connectionString = "mongodb+srv://leticiafrancielle:teste123@appdatabase.sjsbjbi.mongodb.net/"
 const Animal = require('./models/animal')
 const cors = require('cors')
@@ -20,12 +20,13 @@ app.get("/listar-animais", async (req, res) => {
 
 app.post('/adicionar-animal', async (req, res) => {
    
-    let { nome, raca, peso } = req.body
+    let { nome, raca, peso, imagem } = req.body
 
         let animal = {
             nome,
             raca,
-            peso
+            peso,
+            imagem
         }
 
     try {
